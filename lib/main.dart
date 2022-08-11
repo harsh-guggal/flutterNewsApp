@@ -1,0 +1,23 @@
+import 'package:flutter/material.dart';
+import 'package:flutternewsapp/Screens/homescreen.dart';
+import 'package:flutternewsapp/Screens/newsdetail.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Weather App',
+      theme: ThemeData(
+        primarySwatch: Colors.purple,
+      ),
+      home: const HomeScreen(),
+    );
+  }
+}
